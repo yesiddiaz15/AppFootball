@@ -15,6 +15,14 @@
         android:orientation="vertical"
         android:padding="10dp">
 
+        <TextView
+            android:id="@+id/nameTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"/>
+
         <ImageView
             android:id="@+id/bridgeTeam"
             android:layout_width="match_parent"
@@ -23,16 +31,12 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/nameTeam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center" />
-
-        <TextView
             android:id="@+id/stadiumTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="12sp"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

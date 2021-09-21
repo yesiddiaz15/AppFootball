@@ -5,6 +5,8 @@ import java.io.Serializable
 
 data class EventModel(
     @SerializedName("strEvent") val event: String,
+    @SerializedName("strHomeTeam") val homeTeam: String,
+    @SerializedName("strAwayTeam") val awayTeam: String,
     @SerializedName("intHomeScore") val homeScore: String,
     @SerializedName("intAwayScore") val awayScore: String,
     @SerializedName("strLeague") val leagueEvent: String,

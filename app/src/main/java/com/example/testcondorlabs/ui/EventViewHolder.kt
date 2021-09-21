@@ -13,11 +13,12 @@ class EventViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     @SuppressLint("SetTextI18n")
     fun bind(event: EventModel) {
-        binding.nameEvent.text = event.event
-        binding.scoreBoardEvent.text = "${event.homeScore}        -       ${event.awayScore}"
-        binding.dateEvent.text = "${event.dateEvent} ${event.timeEvent}"
-        binding.leagueEvent.text = event.leagueEvent
-        binding.venueEvent.text = event.venueEvent
-        binding.statusEvent.text = event.statusEvent
+        binding.homeTeam.text = event.homeTeam
+        binding.awayTeam.text = event.awayTeam
+        binding.homeScore.text = event.homeScore
+        binding.awayScore.text = event.awayScore
+        binding.dateEvent.text = event.dateEvent
+        binding.stateEvent.text = event.statusEvent
+        binding.timeEvent.text = event.timeEvent
     }
 }

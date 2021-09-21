@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestCondorLabs</string>
+    <string name="spanish_league">Spanish League</string>
+    <string name="last_events">Last Events</string>
 </resources>
