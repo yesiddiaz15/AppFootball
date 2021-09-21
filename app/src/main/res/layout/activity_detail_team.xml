@@ -33,9 +33,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:layout_gravity="center"
                 android:layout_marginBottom="10dp">
 
                 <ImageView
@@ -57,23 +56,47 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"/>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
 
                 <ImageView
+                    android:id="@+id/ivWebPage"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/instagram"
-                    android:layout_marginRight="15dp"
+                    android:src="@drawable/webpage"
+                    android:layout_marginEnd="15dp"
                     android:layout_gravity="center"/>
 
                 <ImageView
+                    android:id="@+id/ivInstagram"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/instagram"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/ivFacebook"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/ivTwitter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/twitter"
                     android:layout_gravity="center"/>
             </LinearLayout>
         </LinearLayout>
