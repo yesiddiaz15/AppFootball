@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
@@ -13,12 +14,38 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorCard"
             android:orientation="vertical"
-            android:layout_weight="2.5"
-            android:padding="10dp"
-            android:background="@color/colorCard">
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/homeTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/homeScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,49 +54,28 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/homeTeam"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.5"
-                    android:layout_gravity="center_vertical|left"
-                    android:layout_marginTop="5dp"/>
-
-                <TextView
-                    android:id="@+id/homeScore"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center_vertical|right"
-                    android:layout_gravity="right"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
-
-                <TextView
                     android:id="@+id/awayTeam"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.5"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
                     android:gravity="center_vertical|left"
-                    android:layout_gravity="left" />
+                    tools:ignore="RtlHardcoded" />
 
                 <TextView
                     android:id="@+id/awayScore"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="right"
                     android:layout_weight="3"
                     android:gravity="center_vertical|right"
-                    android:layout_gravity="right"/>
+                    tools:ignore="RtlHardcoded" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:orientation="horizontal">
@@ -78,33 +84,34 @@
                 android:layout_width="2dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_vertical"
-                android:background="@color/green"/>
+                android:background="@color/green" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="3"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/dateEvent"
-                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:gravity="center" />
 
                 <TextView
                     android:id="@+id/timeEvent"
-                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:gravity="center" />
 
                 <TextView
                     android:id="@+id/stateEvent"
-                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:gravity="center" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
