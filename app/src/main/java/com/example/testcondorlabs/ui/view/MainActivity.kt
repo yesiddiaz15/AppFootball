@@ -1,11 +1,9 @@
 package com.example.testcondorlabs.ui.view
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.testcondorlabs.data.model.TeamModel
 import com.example.testcondorlabs.data.model.TeamsModel
 import com.example.testcondorlabs.databinding.ActivityMainBinding
 import com.example.testcondorlabs.ui.TeamAdapter
