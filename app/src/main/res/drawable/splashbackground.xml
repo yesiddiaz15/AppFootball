@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list android:opacity="opaque"
+<layer-list android:opacity="translucent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@color/green"/>
+    <item android:drawable="@color/colorBackground"/>
 
-    <item android:left="10dp"
-        android:right="10dp"
-        android:top="260dp"
-        android:bottom="260dp">
-        <bitmap android:src="@drawable/logo_splash"/>
+    <item android:left="20dp"
+        android:right="20dp"
+        android:top="300dp"
+        android:bottom="280dp">
+        <bitmap android:src="@drawable/logo_splash"
+            android:gravity="center"/>
     </item>
 
 </layer-list>

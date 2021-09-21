@@ -57,7 +57,7 @@ class DetailTeam : AppCompatActivity() {
 
         binding.ivInstagram.setOnClickListener {
             this.startActivity(
-                Intent(Intent.ACTION_VIEW, uriInstagram).setPackage("com.instagram.android")
+                Intent(Intent.ACTION_VIEW, uriInstagram)
             )
         }
 
