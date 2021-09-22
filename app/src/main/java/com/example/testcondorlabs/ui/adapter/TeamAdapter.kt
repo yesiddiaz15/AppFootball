@@ -1,15 +1,13 @@
-package com.example.testcondorlabs.ui
+package com.example.testcondorlabs.ui.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testcondorlabs.R
 import com.example.testcondorlabs.data.model.TeamModel
 import com.example.testcondorlabs.ui.view.DetailTeam
-import com.example.testcondorlabs.ui.view.MainActivity
 
 class TeamAdapter(private var context: Context, private val teams: List<TeamModel>) :
     RecyclerView.Adapter<TeamViewHolder>() {

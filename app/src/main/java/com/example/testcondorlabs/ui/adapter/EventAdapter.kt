@@ -1,4 +1,4 @@
-package com.example.testcondorlabs.ui
+package com.example.testcondorlabs.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testcondorlabs.data.model.EventsModel
 import com.example.testcondorlabs.data.model.TeamModel
 import com.example.testcondorlabs.databinding.ActivityDetailTeamBinding
-import com.example.testcondorlabs.ui.EventAdapter
+import com.example.testcondorlabs.ui.adapter.EventAdapter
 import com.example.testcondorlabs.ui.viewmodel.EventViewModel
 import com.squareup.picasso.Picasso
 

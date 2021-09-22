@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.testcondorlabs.data.model.TeamsModel
 import com.example.testcondorlabs.databinding.ActivityMainBinding
-import com.example.testcondorlabs.ui.TeamAdapter
+import com.example.testcondorlabs.ui.adapter.TeamAdapter
 import com.example.testcondorlabs.ui.viewmodel.TeamViewModel
 
 class MainActivity : AppCompatActivity() {
