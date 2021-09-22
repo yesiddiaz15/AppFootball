@@ -13,9 +13,9 @@ class TeamViewModel : ViewModel() {
 
     var getTeamsUseCase = GetTeamsUseCase()
 
-    fun onCreate(){
+    fun onCreate(nameLeague: String){
         viewModelScope.launch {
-            val result = getTeamsUseCase()
+            val result = getTeamsUseCase(nameLeague)
             if (result.teams.isNotEmpty()){
                 teamModel.postValue(result)
             }

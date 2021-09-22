@@ -10,10 +10,10 @@ class TeamService {
 
     private val retrofit = RetrofitHelper.getRetrofit()
 
-    suspend fun getTeams(): TeamsModel {
+    suspend fun getTeams(nameLeague: String): TeamsModel {
         return withContext(Dispatchers.IO) {
             val response = retrofit.create(TeamApiClient::class.java)
-                .getAllTeamsForLeague("search_all_teams.php?l=Spanish%20La%20Liga")
+                .getAllTeamsForLeague("search_all_teams.php?l=$nameLeague")
             response.body() ?: TeamsModel(mutableListOf())
         }
     }

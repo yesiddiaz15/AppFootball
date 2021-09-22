@@ -8,8 +8,8 @@ class TeamRepository {
 
     private val api = TeamService()
 
-    suspend fun getAllTeams(): TeamsModel {
-        val response = api.getTeams()
+    suspend fun getAllTeams(nameLeague: String): TeamsModel {
+        val response = api.getTeams(nameLeague)
         TeamProvider.teams = response
         return response
     }

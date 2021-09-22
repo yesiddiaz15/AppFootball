@@ -7,5 +7,5 @@ class GetTeamsUseCase {
 
     private val repository = TeamRepository()
 
-    suspend operator fun invoke(): TeamsModel = repository.getAllTeams()
+    suspend operator fun invoke(nameLeague: String): TeamsModel = repository.getAllTeams(nameLeague)
 }
