@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorBackground"
+    android:orientation="vertical"
     tools:context=".ui.view.MainActivity">
 
     <com.google.android.material.tabs.TabLayout
@@ -13,31 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabGravity="fill"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/colorBackground"
-        app:tabIndicatorColor="#1c1c1d"/>
+        app:tabIndicatorColor="@color/red"
+        app:tabMode="fixed" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-
-    <!--<TextView
-        android:id="@+id/titleLeague"
-        android:text="@string/spanish_league"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerTeams"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginEnd="16dp"/>-->
-
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 </LinearLayout>

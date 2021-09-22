@@ -10,4 +10,5 @@
     <color name="green">#8BC34A</color>
     <color name="colorBackground">#202020</color>
     <color name="colorCard">#353535</color>
+    <color name="red">#F00</color>
 </resources>
